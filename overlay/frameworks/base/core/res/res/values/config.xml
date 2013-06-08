@@ -211,6 +211,13 @@
     <!-- The VoiceMail default value is displayed to my own number if it is true -->
     <bool name="config_telephony_use_own_number_for_voicemail">true</bool>
 
+    <!-- Flag indicating whether we should enable automatic brightness for the button and keyboard backlights. -->
+    <!--<bool name="config_autoBrightnessButtonKeyboard">false</bool>-->
+
+    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not
+         specified -->
+    <string name="default_wallpaper_component" translatable="false">com.android.phasebeam/.PhaseBeamWallpaper</string>
+
     <!-- Enables or disables fading edges when marquee is enabled in TextView. -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
 
@@ -223,64 +230,5 @@
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">false</bool>
 
-    <!-- Hardware 'face' keys present on the device, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Assistant (search)
-            16 - App switch
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">7</integer>
 
-    <!-- empty string to disable, or like: /sys/kernel/fast_charge/force_fast_charge
-         it is disabled by default so devices need to add an overlay to enable-->
-    <!--  string name="config_fastChargePath" translatable="false">/sys/devices/platform/htc_battery/fast_charge</string -->
-
-    <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
-	<bool name="config_cellBroadcastAppLinks">true</bool>
-
-    <!-- Vibrator pattern for feedback about touching a virtual key -->
-    <integer-array name="config_virtualKeyVibePattern">
-        <item>20</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
-    <integer-array name="config_keyboardTapVibePattern">
-        <item>20</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for feedback about a long screen/key press -->
-    <integer-array name="config_longPressVibePattern">
-        <item>21</item>
-    </integer-array>
-
-     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
-     <bool name="config_intrusiveNotificationLed">true</bool>
-     
-     <!--<integer name="config_multiuserMaximumUsers">2</integer>-->
-     
-     <!-- The attenuation in dB applied to the sound effects played
-         through AudioManager.playSoundEffect() when no volume is specified. -->
-     <integer name="config_soundEffectVolumeDb">-1</integer>
-
-     <!-- The attenuation in dB applied to the lock/unlock sounds. -->
-     <integer name="config_lockSoundVolumeDb">-1</integer>
-     
-    <!-- If this is true, the CM torch will be used. -->
-    <!-- bool name="config_useCMTorch">true</bool -->
-
-    <!-- Default value for led color when battery is low on charge: <= 14% -->
-    <integer name="config_notificationsBatteryLowARGB">0xFFFF0000</integer>
-
-    <!-- Default value for led color when battery is medium charged: 15-69% -->
-    <integer name="config_notificationsBatteryMediumARGB">0xFFFFFF00</integer>
-
-    <!-- Default value for led color when batter is almost charged: 70-99% -->
-    <!-- integer name="config_notificationsBatteryAlmostARGB">0xFFFFFF00</integer -->
-
-    <!-- Default value for led color when battery is fully charged: 100% -->
-    <integer name="config_notificationsBatteryFullARGB">0xFF00FF00</integer>     
 </resources>

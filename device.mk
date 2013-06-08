@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     device/htc/enrc2b/configs/calibration:system/etc/calibration \
     device/htc/enrc2b/configs/asound.conf:system/etc/asound.conf \
     device/htc/enrc2b/configs/audio_policy.conf:system/etc/audio_policy.conf \
+    device/htc/enrc2b/configs/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
     device/htc/enrc2b/configs/enctune.conf:system/etc/enctune.conf \
     device/htc/enrc2b/configs/sysctl.conf:system/etc/sysctl.conf \
     device/htc/enrc2b/configs/audio_effects.conf:system/etc/audio_effects.conf
@@ -101,6 +102,15 @@ PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/lib/hw/audio.primary.tegra.so:system/lib/hw/audio.primary.tegra.so \
     device/htc/enrc2b/prebuilt/lib/hw/audio_policy.tegra.so:system/lib/hw/audio_policy.tegra.so \
     device/htc/enrc2b/prebuilt/lib/libasound.so:system/lib/libasound.so
+
+PRODUCT_COPY_FILES += \
+    device/htc/enrc2b/prebuilt/lib/libsurfaceflinger.so:system/lib/libsurfaceflinger.so \
+    device/htc/enrc2b/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
+
+# maxwen: init.d scripts that makes sure kernel modules 
+# in /system/lib/modules are equal to /lib/modules
+PRODUCT_COPY_FILES += \
+        device/htc/enrc2b/scripts/01-module-check:system/etc/init.d/01-module-check \
 
 # Sound
 PRODUCT_COPY_FILES += \
@@ -232,17 +242,24 @@ PRODUCT_PACKAGES += \
 
 # other apps
 PRODUCT_PACKAGES += \
-    Apollo \
-    DSPManager \
-    libcyanogen-dsp \
-    libncurses \
-    bash \
-    CMFileManager \
-    PinyinIME \
     PerformanceTool \
+    EndeavoruParts \
+    ShareLogs \
+    busybox-android \
+    Superuser \
+    rsync \
     Torch \
-    CellBroadcastReceiver \
-    EndeavoruParts
+    LockClock \
+    Email
+
+# Openssh
+PRODUCT_PACKAGES += \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
 
 # Misc
 PRODUCT_PACKAGES += \
@@ -290,7 +307,7 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
         frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
         frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-	    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+        packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.com.google.locationfeatures=1 \
@@ -307,7 +324,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Tegra 3 spacific overrides
 PRODUCT_PROPERTY_OVERRIDES += \
-	    persist.tegra.nvmmlite=1 \
+        persist.tegra.nvmmlite=1 \
         ro.vendor.extension_library=/system/lib/libhtc-opt2.so \
         tf.enable=y
 
@@ -323,3 +340,9 @@ PRODUCT_LOCALES += en_GB xhdpi
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product-if-exists, vendor/htc/enrc2b/enrc2b-vendor.mk)
 $(call inherit-product, device/htc/enrc2b/phone-xhdpi-1024-dalvik-heap.mk) ## Needs a specific config for the device to boot - Lloir
+
+# APN's conf
+PRODUCT_COPY_FILES += \
+    		device/htc/enrc2b/apn/apns-conf.xml:/system/etc/apns-conf.xml
+
+

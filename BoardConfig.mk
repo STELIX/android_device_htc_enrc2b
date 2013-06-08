@@ -94,8 +94,14 @@ BOARD_HAS_SDCARD_INTERNAL := true
 # HTCLOG
 COMMON_GLOBAL_CFLAGS += -DHTCLOG
 
+#SuperUserEmbedding
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
+## IT NEEDS THIS PATCH FOR EMBEDDING INTO SETTINGS ##
+## http://review.cyanogenmod.org/#/c/32957/ ##
+
 # Kernel / Ramdisk
-#TARGET_PREBUILT_KERNEL := device/htc/enrc2b/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/htc/enrc2b/prebuilt/kernel
 TARGET_PROVIDES_INIT_TARGET_RC := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
@@ -112,8 +118,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 
 # Try to build the kernel
-TARGET_KERNEL_SOURCE := kernel/htc/enrc2b
-TARGET_KERNEL_CONFIG := cyanogenmod_enrc2b_defconfig
+#TARGET_KERNEL_SOURCE := kernel/htc/enrc2b
 
 # dont build docs
 DISABLE_DROIDDOC := true
