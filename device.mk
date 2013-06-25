@@ -250,7 +250,8 @@ PRODUCT_PACKAGES += \
     rsync \
     Torch \
     LockClock \
-    Email
+    Email \
+		Stk
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -279,6 +280,15 @@ PRODUCT_PACKAGES += \
     setup_fs \
     sdcard \
     libmtp
+
+# T-Mobile theme engine
+PRODUCT_PACKAGES += \
+       ThemeManager \
+       ThemeChooser \
+       com.tmobile.themes
+
+PRODUCT_COPY_FILES += \
+       device/htc/enrc2b/configs/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 
 # for bugmailer
 ifneq ($(TARGET_BUILD_VARIANT),user)
