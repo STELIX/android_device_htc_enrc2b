@@ -245,13 +245,11 @@ PRODUCT_PACKAGES += \
     PerformanceTool \
     EndeavoruParts \
     ShareLogs \
-    busybox-android \
     Superuser \
-    rsync \
     Torch \
     LockClock \
     Email \
-		Stk
+    Stk
 
 # Openssh
 PRODUCT_PACKAGES += \
