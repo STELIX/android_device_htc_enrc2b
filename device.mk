@@ -247,18 +247,8 @@ PRODUCT_PACKAGES += \
     ShareLogs \
     Superuser \
     Torch \
-    LockClock \
     Email \
     Stk
-
-# Openssh
-PRODUCT_PACKAGES += \
-    scp \
-    sftp \
-    ssh \
-    sshd \
-    sshd_config \
-    ssh-keygen \
 
 # Misc
 PRODUCT_PACKAGES += \
@@ -278,12 +268,6 @@ PRODUCT_PACKAGES += \
     setup_fs \
     sdcard \
     libmtp
-
-# T-Mobile theme engine
-PRODUCT_PACKAGES += \
-       ThemeManager \
-       ThemeChooser \
-       com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
        device/htc/enrc2b/configs/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml

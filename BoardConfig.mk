@@ -118,7 +118,8 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 
 # Try to build the kernel
-#TARGET_KERNEL_SOURCE := kernel/htc/enrc2b
+TARGET_KERNEL_SOURCE := kernel/htc/enrc2b
+TARGET_KERNEL_CONFIG := blade_cm10_oc_cpuquiet_defconfig
 
 # dont build docs
 DISABLE_DROIDDOC := true
