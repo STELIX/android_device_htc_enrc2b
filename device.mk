@@ -248,7 +248,8 @@ PRODUCT_PACKAGES += \
     Superuser \
     Torch \
     Email \
-    Stk
+    Stk \
+    busybox
 
 # Misc
 PRODUCT_PACKAGES += \
