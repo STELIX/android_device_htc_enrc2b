@@ -334,8 +334,4 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product-if-exists, vendor/htc/enrc2b/enrc2b-vendor.mk)
 $(call inherit-product, device/htc/enrc2b/phone-xhdpi-1024-dalvik-heap.mk) ## Needs a specific config for the device to boot - Lloir
 
-# APN's conf
-PRODUCT_COPY_FILES += \
-    		device/htc/enrc2b/apn/apns-conf.xml:/system/etc/apns-conf.xml
-
 
