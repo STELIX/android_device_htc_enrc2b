@@ -119,7 +119,13 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storag
 
 # Try to build the kernel
 TARGET_KERNEL_SOURCE := kernel/htc/enrc2b
-TARGET_KERNEL_CONFIG := lenrek_defconfig
+#TARGET_KERNEL_CONFIG := lenrek_defconfig
+TARGET_KERNEL_CONFIG := blade_stock_defconfig
+
+#Uncomment to display what version#
+#AX_BUILDTYPE := RELEASE
+#AX_BUILDTYPE := NIGHTLY
+AX_BUILDTYPE := EXPERIMENTAL
 
 # dont build docs
 DISABLE_DROIDDOC := true

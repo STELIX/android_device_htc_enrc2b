@@ -1,14 +1,16 @@
 # Specify phone tech before including full_phone
 $(call inherit-product, device/htc/enrc2b/ax_enrc2b.mk)
 
+$(call inherit-product, vendor/ax/config/gsm.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/ax/config/nfc_enhanced.mk)
+
+# Inherit some common AX stuff.
+$(call inherit-product, vendor/ax/config/common_full_phone.mk)
+
 # Release name
 PRODUCT_RELEASE_NAME := enrc2b
-
-# Preload bootanimation
-TARGET_BOOTANIMATION_PRELOAD := true
-
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
 
 #Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=enrc2b BUILD_FINGERPRINT="htc_europe/enrc2b/enrc2b:4.2.2/JRO03C/125529.22:user/release-keys" PRIVATE_BUILD_DESC="3.14.401.22 CL125529 release-keys"
@@ -17,6 +19,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=enrc2b BUILD_FINGERPRINT="htc_europ
 PRODUCT_DEVICE := enrc2b
 PRODUCT_NAME := ax_enrc2b
 PRODUCT_BRAND := htc_europe
-PRODUCT_MODEL := HTC One X+
+PRODUCT_MODEL := One X+
 PRODUCT_MANUFACTURER := HTC
 
