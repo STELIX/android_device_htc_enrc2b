@@ -242,14 +242,7 @@ PRODUCT_PACKAGES += \
 
 # other apps
 PRODUCT_PACKAGES += \
-    PerformanceTool \
     EndeavoruParts \
-    ShareLogs \
-    Superuser \
-    Torch \
-    Email \
-    Stk \
-    busybox
 
 # Misc
 PRODUCT_PACKAGES += \
@@ -258,9 +251,6 @@ PRODUCT_PACKAGES += \
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    VisualizationWallpapers \
     librs_jni
 
 # Filesystem management tools
@@ -269,9 +259,6 @@ PRODUCT_PACKAGES += \
     setup_fs \
     sdcard \
     libmtp
-
-PRODUCT_COPY_FILES += \
-       device/htc/enrc2b/configs/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 
 # for bugmailer
 ifneq ($(TARGET_BUILD_VARIANT),user)

@@ -94,12 +94,6 @@ BOARD_HAS_SDCARD_INTERNAL := true
 # HTCLOG
 COMMON_GLOBAL_CFLAGS += -DHTCLOG
 
-#SuperUserEmbedding
-SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
-## IT NEEDS THIS PATCH FOR EMBEDDING INTO SETTINGS ##
-## http://review.cyanogenmod.org/#/c/32957/ ##
-
 # Kernel / Ramdisk
 TARGET_PREBUILT_KERNEL := device/htc/enrc2b/prebuilt/kernel
 TARGET_PROVIDES_INIT_TARGET_RC := true
