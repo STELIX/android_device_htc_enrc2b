@@ -1,14 +1,6 @@
 # Inherit device configuration
 $(call inherit-product, device/htc/enrc2b/device.mk)
 
-$(call inherit-product, vendor/ax/config/gsm.mk)
-
-# Enhanced NFC
-#$(call inherit-product, vendor/ax/config/nfc_enhanced.mk)
-
-# Inherit some common AX stuff.
-$(call inherit-product, vendor/ax/config/common_full_phone.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := enrc2b
 
