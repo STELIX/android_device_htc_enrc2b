@@ -106,6 +106,8 @@ on boot
     chmod 0660 /sys/class/rfkill/rfkill0/state
     chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
     chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/type
+    restorecon /sys/devices/platform/bcm4330_rfkill/rfkill/rfkill0/state
+    restorecon /sys/devices/platform/bcm4330_rfkill/rfkill/rfkill0/type
 
     # Bluetooth MAC address programming
     chown bluetooth net_bt_stack /sys/module/htc_bdaddress/parameters/bdaddress

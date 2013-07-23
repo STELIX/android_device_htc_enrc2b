@@ -128,6 +128,7 @@ BOARD_SEPOLICY_UNION := \
     file_contexts \
     file.te \
     device.te \
-    domain.te
+    domain.te \
+    btmacreader.te
 
 endif
