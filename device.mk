@@ -260,14 +260,6 @@ PRODUCT_PACKAGES += \
     sdcard \
     libmtp
 
-# for bugmailer
-ifneq ($(TARGET_BUILD_VARIANT),user)
-    PRODUCT_PACKAGES += send_bug
-    PRODUCT_COPY_FILES += \
-        system/extras/bugmailer/bugmailer.sh:system/bin/bugmailer.sh \
-        system/extras/bugmailer/send_bug:system/bin/send_bug    
-endif
-
 # Permissions
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
