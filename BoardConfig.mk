@@ -119,16 +119,22 @@ TARGET_KERNEL_CONFIG := lenny_defconfig
 # dont build docs
 DISABLE_DROIDDOC := true
 
-ifeq ($(HAVE_SELINUX),true)
-
 BOARD_SEPOLICY_DIRS := \
     device/htc/enrc2b/selinux
 
 BOARD_SEPOLICY_UNION := \
-    file_contexts \
-    file.te \
-    device.te \
-    domain.te \
-    btmacreader.te
-
-endif
+        file_contexts \
+        genfs_contexts \
+        app.te \
+        btmacreader.te \
+        compatibility.te \
+        device.te \
+        drmserver.te \
+        init_shell.te \
+        file.te \
+        rild.te \
+        sensors_config.te \
+        shell.te \
+        surfaceflinger.te \
+        system.te \
+        zygote.te

@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
 
 # Files needed for boot image
 PRODUCT_COPY_FILES := \
-    device/htc/enrc2b/ramdisk/init.rc:root/init.rc \
     device/htc/enrc2b/ramdisk/init.enrc2b.rc:root/init.enrc2b.rc \
     device/htc/enrc2b/ramdisk/init.usb.rc:root/init.usb.rc \
     device/htc/enrc2b/ramdisk/init.trace.rc:root/init.trace.rc \
