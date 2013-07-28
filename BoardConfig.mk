@@ -119,6 +119,9 @@ TARGET_KERNEL_CONFIG := lenny_defconfig
 # dont build docs
 DISABLE_DROIDDOC := true
 
+HAVE_SELINUX := false
+
+ifeq ($(HAVE_SELINUX),true)
 BOARD_SEPOLICY_DIRS := \
     device/htc/enrc2b/selinux
 
@@ -138,3 +141,4 @@ BOARD_SEPOLICY_UNION := \
         surfaceflinger.te \
         system.te \
         zygote.te
+endif
