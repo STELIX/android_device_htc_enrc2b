@@ -104,7 +104,6 @@ PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/lib/libasound.so:system/lib/libasound.so
 
 PRODUCT_COPY_FILES += \
-    device/htc/enrc2b/prebuilt/lib/libsurfaceflinger.so:system/lib/libsurfaceflinger.so \
     device/htc/enrc2b/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
 
 # maxwen: init.d scripts that makes sure kernel modules 
