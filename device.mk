@@ -105,11 +105,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
 
-# maxwen: init.d scripts that makes sure kernel modules 
-# in /system/lib/modules are equal to /lib/modules
-PRODUCT_COPY_FILES += \
-        device/htc/enrc2b/scripts/01-module-check:system/etc/init.d/01-module-check \
-
 # Sound
 PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/soundimage/CodecDSPID.txt:system/etc/soundimage/CodecDSPID.txt \
