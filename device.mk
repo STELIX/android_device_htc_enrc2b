@@ -98,6 +98,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
 
+# Dirty hack for su
+PRODUCT_COPY_FILES += \
+		device/htc/enrc2b/scripts/01-su:system/etc/init.d/01-su
+
 # Sound
 PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/soundimage/CodecDSPID.txt:system/etc/soundimage/CodecDSPID.txt \
@@ -225,10 +229,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Polly \
     pollyd
-
-# other apps
-PRODUCT_PACKAGES += \
-    EndeavoruParts \
 
 # Misc
 PRODUCT_PACKAGES += \
