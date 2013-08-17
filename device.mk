@@ -197,8 +197,8 @@ PRODUCT_PACKAGES += \
         calibrator
 
 # video
-#PRODUCT_PACKAGES += \
-#	libstagefrighthw
+PRODUCT_PACKAGES += \
+	libstagefrighthw
 
 # camera wrapper 
 PRODUCT_PACKAGES += \
