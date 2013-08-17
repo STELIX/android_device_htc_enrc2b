@@ -95,13 +95,6 @@ PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/usr/idc/tv-touchscreen.idc:system/usr/idc/tv-touchscreen.idc \
     device/htc/enrc2b/prebuilt/usr/idc/projector_input.idc:system/usr/idc/projector_input.idc
 
-# properitary ones 
-# This is needed for audio to work
-PRODUCT_COPY_FILES += \
-    device/htc/enrc2b/prebuilt/lib/hw/audio.primary.tegra.so:system/lib/hw/audio.primary.tegra.so \
-    device/htc/enrc2b/prebuilt/lib/hw/audio_policy.tegra.so:system/lib/hw/audio_policy.tegra.so \
-    device/htc/enrc2b/prebuilt/lib/libasound.so:system/lib/libasound.so
-
 PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
 
