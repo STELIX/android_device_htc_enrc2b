@@ -96,6 +96,10 @@ PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/usr/idc/projector_input.idc:system/usr/idc/projector_input.idc
 
 PRODUCT_COPY_FILES += \
+		device/htc/enrc2b/scripts/01-su:system/etc/init.d/01-su
+
+
+PRODUCT_COPY_FILES += \
     device/htc/enrc2b/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
 
 # Sound
