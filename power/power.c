@@ -137,6 +137,9 @@ static void enrc2b_power_hint(struct power_module *module, power_hint_t hint,
     case POWER_HINT_INTERACTION:
         //ALOGI("enrc2b_power_hint POWER_HINT_INTERACTION");
         break;
+    case POWER_HINT_VIDEO_ENCODE:
+        //ALOGI("enrc2b_power_hint POWER_HINT_VIDEO_ENCODE");
+        break;
     default:
         //ALOGI("enrc2b_power_hint unknown:%d", hint);
         break;
