@@ -4,8 +4,9 @@ $(call inherit-product, vendor/ax/config/gsm.mk)
 # Release name
 PRODUCT_RELEASE_NAME := enrc2b
 
-# Boot animation
-TARGET_BOOTANIMATION_NAME := 720
+# Resolution values for bootanimation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/ax/config/common_full_phone.mk)
@@ -17,7 +18,7 @@ $(call inherit-product, device/htc/enrc2b/full_enrc2b.mk)
 PRODUCT_DEVICE := enrc2b
 PRODUCT_NAME := ax_enrc2b
 PRODUCT_BRAND := htc_europe
-PRODUCT_MODEL := HTC One X+
+PRODUCT_MODEL := One X+
 PRODUCT_MANUFACTURER := HTC
 
 #Set build fingerprint / ID / Product Name etc.
