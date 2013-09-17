@@ -49,10 +49,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calibration:system/etc/calibration \
     $(LOCAL_PATH)/configs/sysctl.conf:system/etc/sysctl.conf
 
-# su daemon
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/scripts/01-su:system/etc/init.d/01-su
-
 #Audio packages
 PRODUCT_PACKAGES += \
     libinvensense_mpl
