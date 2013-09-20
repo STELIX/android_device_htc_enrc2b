@@ -108,6 +108,9 @@ on boot
     chmod 0664 /sys/module/lowmemorykiller/parameters/adj
     chown root system /sys/module/lowmemorykiller/parameters/minfree
     chmod 0664 /sys/module/lowmemorykiller/parameters/minfree
+    
+# LowMem reserve it is Currently set to 12MB
+    write /proc/sys/vm/lowmem_reserve_ratio "128 128"
 
 # Tweak background writeout
     write /proc/sys/vm/dirty_expire_centisecs 200
