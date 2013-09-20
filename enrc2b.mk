@@ -47,7 +47,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/p2p_supplicant.conf:system/etc/wifi/p2p_supplicant.conf \
     $(LOCAL_PATH)/configs/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     $(LOCAL_PATH)/configs/calibration:system/etc/calibration \
-    $(LOCAL_PATH)/configs/sysctl.conf:system/etc/sysctl.conf
+    $(LOCAL_PATH)/configs/sysctl.conf:system/etc/sysctl.conf \
+    $(LOCAL_PATH)/configs/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 #Audio packages
 PRODUCT_PACKAGES += \
