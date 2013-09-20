@@ -104,17 +104,27 @@ on boot
 # parameters to match how it is managing things.
     write /proc/sys/vm/overcommit_memory 1
     write /proc/sys/vm/min_free_order_shift 4
+    write /proc/sys/vm/dirty_ratio 55
+    write /proc/sys/vm/dirty_writeback_centisecs 2000
+    write /proc/sys/vm/drop_caches 2
+    write /proc/sys/vm/min_free_kbytes 5120
+    write /proc/sys/vm/min_free_order_shift 3
+    write /proc/sys/vm/oom_kill_allocating_task 1
+    write /proc/sys/vm/page-cluster 3
+    write /proc/sys/vm/panic_on_oom 0
+    write /proc/sys/vm/swappiness 40
+    write /proc/sys/vm/vfs_cache_pressure 70
     chown root system /sys/module/lowmemorykiller/parameters/adj
     chmod 0664 /sys/module/lowmemorykiller/parameters/adj
     chown root system /sys/module/lowmemorykiller/parameters/minfree
     chmod 0664 /sys/module/lowmemorykiller/parameters/minfree
     
 # LowMem reserve it is Currently set to 12MB
-    write /proc/sys/vm/lowmem_reserve_ratio "128 128"
+    #write /proc/sys/vm/lowmem_reserve_ratio "128 128"
 
 # Tweak background writeout
-    write /proc/sys/vm/dirty_expire_centisecs 200
-    write /proc/sys/vm/dirty_background_ratio  5
+    write /proc/sys/vm/dirty_expire_centisecs 1400
+    write /proc/sys/vm/dirty_background_ratio  60
 
 # allow system to modify ksm control files
     chown root system /sys/kernel/mm/ksm/pages_to_scan
