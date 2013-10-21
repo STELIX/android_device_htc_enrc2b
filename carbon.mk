@@ -6,9 +6,8 @@ $(call inherit-product, device/htc/enrc2b/enrc2b.mk)
 PRODUCT_RELEASE_NAME := enrc2b
 
 # Preload bootanimation
-TARGET_BOOTANIMATION_PRELOAD := true
+#TARGET_BOOTANIMATION_PRELOAD := true    device/htc/enrc2b/bootanimation.zip:system/media/bootanimation.zip \
 PRODUCT_COPY_FILES +=  \
-    device/htc/enrc2b/bootanimation.zip:system/media/bootanimation.zip \
         device/htc/enrc2b/audio/alarms/Alarm_Beep_01.ogg:system/media/audio/alarms/Alarm_Beep_01.ogg \
 	device/htc/enrc2b/audio/alarms/Alarm_Beep_02.ogg:system/media/audio/alarms/Alarm_Beep_02.ogg \
 	device/htc/enrc2b/audio/alarms/Alarm_Beep_03.ogg:system/media/audio/alarms/Alarm_Beep_03.ogg \
