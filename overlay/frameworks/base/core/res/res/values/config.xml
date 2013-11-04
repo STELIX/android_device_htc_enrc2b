@@ -246,5 +246,8 @@
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
     <bool name="config_allowAllRotations">true</bool>
-
+    
+    <!-- Allow changing button backlight brightness in Settings -->
+    <integer name="config_buttonBrightnessSettingDefault">140</integer>
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 </resources>
