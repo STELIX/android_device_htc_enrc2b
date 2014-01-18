@@ -30,9 +30,3 @@ PRODUCT_NAME := carbon_enrc2b
 PRODUCT_DEVICE := enrc2b
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := One X+
-
-# Discard inherited values and use our own instead.
-#PRODUCT_NAME := full_enrc2b
-#PRODUCT_DEVICE := enrc2b
-#PRODUCT_BRAND := Android
-#PRODUCT_MODEL := Full AOSP on enrc2b

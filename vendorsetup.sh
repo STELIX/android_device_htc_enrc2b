@@ -22,5 +22,3 @@
 
 add_lunch_combo carbon_enrc2b-userdebug
 add_lunch_combo carbon_enrc2b-eng
-#add_lunch_combo ax_enrc2b-userdebug
-#add_lunch_combo ax_enrc2b-eng

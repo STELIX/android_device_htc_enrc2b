@@ -12,6 +12,7 @@ bin/hdmid
 bin/hostapd
 bin/htcbatt
 bin/htc_ebdlogd
+bin/htcfs
 bin/IMCdownload
 bin/InjectionTool
 bin/make_sec_bin
@@ -35,6 +36,7 @@ etc/firmware/nvavp_os_eff00000.bin
 etc/firmware/nvavp_vid_ucode_alt.bin
 etc/firmware/nvavp_vid_ucode.bin
 etc/Flash_Loader.conf
+etc/nfcee_access.xml
 etc/QUO_6260.fls.clean
 etc/uilock.yuv
 etc/voicemail-conf.xml
@@ -65,6 +67,7 @@ lib/libcall_volume.so
 lib/libcameraasd.so
 lib/libcameraface.so
 lib/libcamerapp.so
+lib/libcapsjava.so
 lib/libcgdrv.so
 lib/libdumppcm.so
 lib/libhtccamera.so
@@ -73,8 +76,8 @@ lib/libhtc-opt2.so
 lib/libhtc_rilhook.so
 lib/libhtc_ril.so
 lib/libhtcsunny2engine.so
+lib/libhtcsunnyengine.so
 lib/libhtcsurfaces.so
-lib/libkeystore_client.so
 lib/libmllite.so
 lib/libmlplatform.so
 lib/libmpl_jni.so
@@ -87,8 +90,7 @@ lib/libnvcapclk.so
 lib/libnvcap.so
 lib/libnvcap_video.so
 lib/libnvcontrol_jni.so
-lib/libnvddk_2d.so
-lib/libnvddk_2d_v2.so
+lib/libnvcpud.so
 lib/libnvglsi.so
 lib/libnvmm_asfparser.so
 lib/libnvmm_audio.so
@@ -121,6 +123,9 @@ lib/libnvomxilclient.so
 lib/libnvomx.so
 lib/libnvos.so
 lib/libnvparser.so
+lib/libnvremoteevtmgr.so
+lib/libnvremotell.so
+lib/libnvremoteprotocol.so
 lib/libnvrm_graphics.so
 lib/libnvrm.so
 lib/libnvsm.so
@@ -133,10 +138,14 @@ lib/libOlaEngineNew.so
 lib/libposteffect.so
 lib/libril-icera.so
 lib/libril.so
+lib/libscaladoapi.so
+lib/libscalado_htcalbum2.so
 lib/libscalado.so
+lib/libscaladoutil.so
 lib/libsensors_mpl.so
 lib/libsystem_server.so
 vendor/firmware/libpn544_fw.so
+vendor/firmware/mfg.bin
 vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
 vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
 vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin
