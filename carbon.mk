@@ -28,4 +28,4 @@ PRODUCT_MANUFACTURER := HTC
 CARBON_BUILDTYPE := NIGHTLY
 
 #Set build fingerprint / ID / Product Name etc.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=carbon_enrc2b BUILD_FINGERPRINT="htc_europe/enrc2b/enrc2b:4.4.2/JRO03C/125529.22:user/release-keys" PRIVATE_BUILD_DESC="3.14.401.22 CL125529 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=carbon_enrc2b BUILD_FINGERPRINT="htc_europe/enrc2b/enrc2b:4.4.3/KTU84M/1158763:user/release-keys" PRIVATE_BUILD_DESC="enrc2b-user 4.4.3 KTU84M 1158763 release-keys"
